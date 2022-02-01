@@ -1,0 +1,141 @@
+[
+	{
+		"id": 0,
+		"name": "NAMA: LINE HACKATHON 2020",
+		"img": "images/projects/nama.jpg",
+		"img-sm": "images/projects-sm/nama-sm.png",
+		"url": "",
+		"color": "#fed330",
+		"description": "As part of a hackathon hosted by <strong>LINE Company (Thailand)</strong>, \"NAMA\" is a <strong>chatbot solution</strong> developed to accommodate the process of <strong>organizing group gatherings</strong>, from creating an appointment to following up on the attendees' status. The main objective of this project is to enrich the value of time and friendship through automation using LINE and Google technologies.",
+		"contribution": [
+			"<strong>Research:</strong> user journey, target marget",
+			"<strong>Management:</strong> feature direction, project scope identification",
+			"<strong>Design:</strong> content, motion graphics, microinteractions",
+			"<strong>Development:</strong> front-end content pages using <strong>Vue.js</strong>",
+			"<strong>Other:</strong> pitching presentation"
+		],
+		"social impacts": 2,
+		"cool stuff": 5
+	},
+	{
+		"id": 1,
+		"name": "Participatory Budgeting",
+		"img": "images/projects/pb.png",
+		"img-sm": "images/projects-sm/pb-sm.png",
+		"url": "https://projects.punchup.world/bangkokbudgeting/#explore",
+		"color": "#20bf6b",
+		"description": "In collaboration with <strong>Punch Up Studio</strong> and other partners, the Participatory Budgeting <strong>data storytelling</strong> project <strong>introduces the collaborative budget design concept</strong> to the public, starting from Bangkok city. The project simulates a simple participatory budgeting practice and aims to present the collected responses from the public to the future Bangkok governor.",
+		"contribution": [
+			"<strong>Design:</strong> treemap visualization interaction and responsive layout",
+			"<strong>Development:</strong> interactive treemap visualizing Bangkok’s annual budget in various aspects using <strong>D3.js + Vue.js + Tailwind CSS</strong>, barchart visualization debug"
+		],
+		"social impacts": 5,
+		"cool stuff": 5
+	},
+	{
+		"id": 2,
+		"name": "Generation Gap (RoLD)",
+		"img": "images/projects/tij.png",
+		"img-sm": "images/projects-sm/tij-sm.png",
+		"color": "#3867d6",
+		"url": "https://tijrold.org/rold-in-action/letsgettogether/summary",
+		"description": "The \"Generation Gap\" project was created in collaboration with <strong>Punch Up Studio</strong> and the <strong>Thailand Institute of Justice (TIJ)</strong>. The project takes the user along a <strong>data-driven</strong> quiz that explores different choices that people from different generations make under various social situations. This project aims to <strong>create generational literacy and suggest a practical guide to common ground.</strong>",
+		"contribution": [
+			"<strong>Development:</strong> \"summary\" page — explaining each generation’s persona, the solution to common ground, and quiz results using <strong>React + Typescript + Tailwind CSS</strong>"
+		],
+		"social impacts": 5,
+		"cool stuff": 3.3
+	},
+	{
+		"id": 3,
+		"name": "112Story",
+		"img": "images/projects/112story.png",
+		"img-sm": "images/projects-sm/112story-sm.png",
+		"url": "https://112story.com/112",
+		"color": "#f7b731",
+		"description": "\"112Story\", a project in collaboration with <strong>numerous activist groups</strong>, brings the conversation regarding the misuse of Lèse-majesté law in Thailand to the forefront. The project showcases three aspects 一 The personality of Lèse-majesté's victims, the victims' journey towards the law, and the aspect of the law's usage. \"112Story\" <strong>highlights the message that no human deserves such intense punishment from being seen as an opposition to the monarchy.</strong>",
+		"contribution": [
+			"<strong>Design:</strong> scroll animation + transition",
+			"<strong>Development:</strong> \"understand article 112\" page — explaining the law's usage, various problematic aspects, and views of scholars towards the Lèse-majesté law using <strong>Svelte + Windi CSS</strong>, data visualization"
+		],
+		"social impacts": 5,
+		"cool stuff": 5
+	},
+	{
+		"id": 4,
+		"name": "Civil Map 2020",
+		"img": "images/projects/civil.png",
+		"img-sm": "images/projects-sm/civil-sm.png",
+		"url": "https://palminister-civil-map.vercel.app/",
+		"color": "#fd9644",
+		"description": "\"Civil Map 2020\" is an <strong>interactive data visualization project</strong> that <strong>presents a map of Thailand’s Civil Movement in 2020</strong>. it attempts to answer two questions; where did the people protests, and which groups were the most active. The project utilized the dataset from Elect.in.th 一 \"the Civil Movement 2020\". *This project is experimental and did not implement responsive design*",
+		"contribution": [
+			"<strong>Design:</strong> interaction, art direction",
+			"<strong>Development:</strong> data manipulation using <strong>Python</strong>, website development using <strong>Mapbox API + Next.js + D3.js + Tailwind CSS</strong>"
+		],
+		"social impacts": 4,
+		"cool stuff": 4.5
+	},
+	{
+		"id": 5,
+		"name": "Dear, Your Majesty",
+		"img": "images/projects/dym.jpg",
+		"img-sm": "images/projects-sm/dym-sm.png",
+		"url": "https://dearyourmajesty.com/",
+		"color": "#a55eea",
+		"description": "\"Dear, Your Majesty\" <strong>data scrollytelling</strong> project collects different shades of messages that the people attempted to deliver to the monarchs throughout history. The project visualizes the reachability and consequences of different messages under different times, governments, and reigns. \"Dear, Your Majesty\" <strong>emphasizes the need for safe spaces to discuss and question the monarchs' activities.</strong>",
+		"contribution": [
+			"<strong>Research:</strong> data gathering (2+ months process), content analysis",
+			"<strong>Management:</strong> project scope identification, information prioritization",
+			"<strong>Design:</strong> art direction, illustration, microinteraction, animation, transition, responsive layout",
+			"<strong>Development:</strong> website development using <strong>Next.js + Tailwind CSS</strong>"
+		],
+		"social impacts": 5,
+		"cool stuff": 5
+	},
+	{
+		"id": 7,
+		"name": "Virus (Short Film)",
+		"img": "images/projects/virus.jpg",
+		"img-sm": "images/projects-sm/virus-sm.png",
+		"url": "https://seeme.me/ch/upclip/MmmZXy",
+		"color": "#fc5c65",
+		"description": "\"Virus\" is an award-winning mockumentary short film <strong>created to raise the cyberbullying issue in Thailand</strong>. The story narrates through the thoughts of a transgender woman as she tries to monitor her emotions after being degraded by internet bullies. The short film uses \"Virus\" as an analogy to describe the current cyberbullying behavior and characteristics.",
+		"contribution": [
+			"<strong>Design:</strong> storyboard, script, art direction, music-sfx-foley",
+			"<strong>Development:</strong> pre-production, production, post-production"
+		],
+		"social impacts": 3.5,
+		"cool stuff": 3
+	},
+	{
+		"id": 8,
+		"name": "Thai Vaccination",
+		"img": "images/projects/vacc.png",
+		"img-sm": "images/projects-sm/vacc-sm.png",
+		"url": "https://thai-vaccination.vercel.app/",
+		"color": "#45aaf2",
+		"description": "\"Thai Vaccination\" is a collaborated dashboard project that monitors the vaccination process in Thailand. It was determined to <strong>visualize the hope that Thais can hold on to during this COVID-19 pandemic</strong> under the current government by tracking the vaccination progress and calculating the approximate time to achieve the promised goal. The project offers 3 API endpoints that are public and free for all uses; however, it was last updated on Jun 7th, 2021.",
+		"contribution": [
+			"<strong>Design:</strong> dashboard interface, data visualization and interaction",
+			"<strong>Development:</strong> API endpoints (Google Sheets as database), website developement using <strong>Next.js + D3.js + Google Sheets API + Tailwind JIT + AOS</strong>"
+		],
+		"social impacts": 4,
+		"cool stuff": 4
+	},
+	{
+		"id": 9,
+		"name": "MUIR Ambassador",
+		"img": "images/projects/muir.jpg",
+		"img-sm": "images/projects-sm/muir-sm.png",
+		"url": "",
+		"color": "#4b7bec",
+		"description": "On January 9th, 2020, The Mahidol University International Relations <strong>(MU-IR) Ambassadors team</strong> and I took part in designing and conducting an English lesson for Karen students at Ban Ton Mamuang Border Patrol Police School. The designed lesson introduced students to the basic verbs and words commonly found in daily usage and provided simple guidance to utilizing Google Translate.",
+		"contribution": [
+			"<strong>Design:</strong> lesson and classroom interaction design",
+			"<strong>Execution:</strong> teaching and entertaining students"
+		],
+		"social impacts": 3,
+		"cool stuff": 3
+	}
+]
