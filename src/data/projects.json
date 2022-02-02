@@ -8,7 +8,7 @@
 		"color": "#fed330",
 		"description": "As part of a hackathon hosted by <strong>LINE Company (Thailand)</strong>, \"NAMA\" is a <strong>chatbot solution</strong> developed to accommodate the process of <strong>organizing group gatherings</strong>, from creating an appointment to following up on the attendees' status. The main objective of this project is to enrich the value of time and friendship through automation using LINE and Google technologies.",
 		"contribution": [
-			"<strong>Research:</strong> user journey, target marget",
+			"<strong>Research:</strong> user journey, target market",
 			"<strong>Management:</strong> feature direction, project scope identification",
 			"<strong>Design:</strong> content, motion graphics, microinteractions",
 			"<strong>Development:</strong> front-end content pages using <strong>Vue.js</strong>",
