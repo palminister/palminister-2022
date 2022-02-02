@@ -14,7 +14,7 @@
 		tooltip.style.opacity = '0';
 	};
 	const resumeLink =
-		'https://drive.google.com/file/d/1ZU7yg5fencEhI0kBRL2lGUrhCwgzXpON/view?usp=sharing';
+		'https://drive.google.com/file/d/1MUFRkVZynW_g2XAYBnK0qqFsf3-eA8bV/view?usp=sharing';
 </script>
 
 <section class="flex flex-col items-center my-48 md:my-60">
