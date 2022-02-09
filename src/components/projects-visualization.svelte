@@ -152,9 +152,14 @@
 			height: 0.75rem;
 			opacity: 1;
 		}
-		100% {
+		80% {
 			width: 2rem;
 			height: 2rem;
+			opacity: 0;
+		}
+		100% {
+			width: 0rem;
+			height: 0rem;
 			opacity: 0;
 		}
 	}
