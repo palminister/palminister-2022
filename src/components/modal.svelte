@@ -34,7 +34,7 @@
 			</div>
 			<p class="main-text px-3 pb-3">{name}</p>
 			<img src={image} alt={name} />
-			<div class="p-3 text-[12px] leading-5 md:(leading-6 text-[14px])">
+			<div class="px-3 pt-3 text-[12px] leading-5 md:(leading-6 text-[14px])">
 				<p class="main-text py-3">Description:</p>
 				<p class="font-sans">
 					{@html description}
