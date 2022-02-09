@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { getContext } from 'svelte';
 	import Scrolly from '../utils/Scrolly.svelte';
 	import Characters from './characters.svelte';
 	import InfoStory from './info-story.svelte';
@@ -12,9 +13,16 @@
 		'<p>1 actually exists </p>',
 		'<p>Hi, I’m Palm Jumnongrat, and I’m an artist who codes</p>'
 	];
+
+	let seemore: HTMLImageElement;
+	let windowStore: any = getContext('windowStore');
+	$: if (seemore && $windowStore.scrollY > 5) {
+		seemore.style.opacity = '0';
+	}
 </script>
 
 <section>
+	<img bind:this={seemore} class="seemore" src="images/icons/arrow-right.svg" alt="arrow-right" />
 	<div class="section-container max-w-screen-lg m-auto">
 		<div class="steps-container">
 			<Scrolly bind:value={currentStep}>
@@ -40,6 +48,33 @@
 <style>
 	:global(body) {
 		overflow-x: hidden;
+	}
+
+	.seemore {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 40px;
+		width: 30px;
+		height: 30px;
+		margin: 0 auto;
+		z-index: 30;
+		opacity: 1;
+		transform: rotate(90deg);
+		transition: all 300ms ease-out;
+		animation: seemoreAnimation 3s infinite;
+	}
+
+	@keyframes seemoreAnimation {
+		0% {
+			transform: rotate(90deg) translateX(0px);
+		}
+		50% {
+			transform: rotate(90deg) translateX(10px);
+		}
+		100% {
+			transform: rotate(90deg) translateX(0px);
+		}
 	}
 
 	.sticky {

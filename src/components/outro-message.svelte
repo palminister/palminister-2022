@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { generateArray, getRandomArbitrary } from '../utils/utils';
+	import { getContext } from 'svelte';
+
 	let sample = 25;
-	let width: number = 0;
-	$: width > 768 ? (sample = 20) : (sample = 25);
+	let windowStore: any = getContext('windowStore');
+	$: $windowStore.innerWidth > 768 ? (sample = 20) : (sample = 25);
 
 	const radius = 300;
 	const boxSize = 645;
@@ -18,8 +20,6 @@
 		randomNumber = Math.ceil(getRandomArbitrary(0, 50));
 	}, 100);
 </script>
-
-<svelte:window bind:innerWidth={width} />
 
 <section
 	style={`height:${boxSize}px;`}

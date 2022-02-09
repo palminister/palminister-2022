@@ -3,7 +3,7 @@
 	import ProjectsVisualization from './projects-visualization.svelte';
 	import Dropdown from './dropdown.svelte';
 	import Modal from './modal.svelte';
-	import { onMount } from 'svelte';
+	import { onMount, getContext } from 'svelte';
 
 	const choices = ['social impacts', 'cool stuff'];
 	let currentChoice: string;
@@ -58,10 +58,8 @@
 	};
 	$: clicked ? openModal() : closeModal();
 
-	// $: console.log(modalInner);
-
+	let windowStore: any = getContext('windowStore');
 	let currentStep: number;
-	let scrollY: number;
 	let currentY: number;
 	let vizElement: HTMLElement;
 
@@ -70,17 +68,13 @@
 	}
 
 	$: if (currentStep === 0) {
-		let scrollOffset = scrollY + currentY;
+		let scrollOffset = $windowStore.scrollY + currentY;
 		if (scrollOffset > 325) {
 			vizElement.style.width = '100%';
 			vizElement.style.opacity = '1';
 		}
 	}
-
-	// $: console.log(scrollY);
 </script>
-
-<svelte:window bind:scrollY />
 
 <section class="flex flex-col m-auto max-w-screen-md">
 	<div class="flex flex-col items-center justify-center md:flex-row">
