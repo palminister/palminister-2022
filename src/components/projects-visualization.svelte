@@ -2,6 +2,7 @@
 	import * as d3 from 'd3';
 	import { findClosestPoint } from '../utils/utils';
 	import allProjects from '../data/projects.json';
+	import { getContext } from 'svelte';
 
 	export let metric = 'social impacts';
 	export let openedElement;
@@ -16,9 +17,8 @@
 
 	let radius = 20;
 
-	let currentWidth;
-	$: currentWidth > 768 ? (radius = 25) : (radius = 17.5);
-
+	let windowStore = getContext('windowStore');
+	$: $windowStore.innerWidth > 768 ? (radius = 25) : (radius = 17.5);
 	$: xScale = d3
 		.scaleLinear()
 		.domain([1, 5])
@@ -58,8 +58,6 @@
 	$: hoveredPoint = allProjects.find((d) => d.name === hoveredPointName) || undefined;
 </script>
 
-<svelte:window bind:innerWidth={currentWidth} />
-
 <div
 	class="wrapper"
 	bind:this={wrapper}
@@ -77,9 +75,26 @@
 	on:mouseleave={(e) => (hoveredPointName = null)}
 >
 	{#each projectPositions as project}
-		<div
-			class="image"
-			style={`
+		<div class="absolute">
+			<div
+				class="pulse"
+				style={`
+				visibility: ${openedElement.has(project.id) ? 'hidden' : 'visible'};
+				border-color: ${hoveredPointName === project.name ? project.color : 'transparent'};
+				background-color: ${project.color}; 
+				transform: translate(calc(-50% + ${project.x - shiftX}px), calc(-50% + ${project.y}px));`}
+			/>
+			<div
+				class="pulse pulsing"
+				style={`
+				visibility: ${openedElement.has(project.id) ? 'hidden' : 'visible'};
+				border-color: ${hoveredPointName === project.name ? project.color : 'transparent'};
+				background-color: ${project.color}; 
+				transform: translate(calc(-50% + ${project.x - shiftX}px), calc(-50% + ${project.y}px));`}
+			/>
+			<div
+				class="image"
+				style={`
 		  opacity: ${openedElement.has(project.id) ? '0.3' : '1'};
           background-image: url(${project['img-sm']});
 		  background-position: center;
@@ -88,7 +103,8 @@
           width: ${radius * 2}px;
           transform: translate(calc(-50% + ${project.x - shiftX}px), calc(-50% + ${project.y}px));
         `}
-		/>
+			/>
+		</div>
 	{/each}
 
 	<div class="horizontal-line" />
@@ -118,6 +134,31 @@
 		margin-top: 50px;
 		cursor: pointer;
 	}
+
+	.pulse {
+		@apply absolute w-3 h-3 rounded-full -right-7 -top-[0.85rem] md:(w-4 h-4 -right-10 -top-[-1.4rem]) z-20;
+		transition: transform 0.4s ease-out;
+	}
+
+	.pulsing {
+		left: 1rem;
+		@apply left-4 md:left-6;
+		animation: animatePulse 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+	}
+
+	@keyframes animatePulse {
+		0% {
+			width: 0.75rem;
+			height: 0.75rem;
+			opacity: 1;
+		}
+		100% {
+			width: 2rem;
+			height: 2rem;
+			opacity: 0;
+		}
+	}
+
 	.image {
 		position: absolute;
 		background-size: cover;
